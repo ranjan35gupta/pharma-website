@@ -1,11 +1,11 @@
 {
-  "name": "tie2ndpractical",
+  "name": "@ranjan35gupta/pharma-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,16 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjan35gupta/pharma-website.git"
+  },
+  "publishConfig": {
+    "@ranjan35gupta:registry": "https://npm.pkg.github.com"
+  }, 
+  "bugs": {
+    "url": "https://github.com/ranjan35gupta/pharma-website/issues"
+  },
+  "homepage": "https://github.com/ranjan35gupta/pharma-website#readme"
 }
