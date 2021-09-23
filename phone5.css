@@ -1,0 +1,31 @@
+#navbar{flex-direction: column;
+}
+#navbar::before{
+    height: 132px;
+}
+#navbar ul li{
+    justify-content: space-evenly;
+    height: 67px;
+align-items: center;}
+#navbar ul li a{
+    font-size: 1rem;
+}
+.center{
+    display: initial;
+}
+.chat{width: 100%;}
+.chat img{width: 8%;}
+#about{
+    width: 100%;
+    height: 330px;
+    margin-top: 48px;
+    margin-bottom: 106px;
+    /* padding: 60px; */
+}
+p{
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 24px 0px;
+}

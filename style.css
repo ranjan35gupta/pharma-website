@@ -1,0 +1,170 @@
+*{margin: 0%;
+padding: 0%;}
+
+/* navigation */
+#navbar{display: flex;
+align-items: center;
+
+position: sticky;
+
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(126 220 248);
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar #logo{display: flex;
+    
+    
+}#navbar #logo img{
+    
+    width: 90px;
+    height: 80px;
+    float: left;
+    
+}
+
+#navbar ul{display: flex;
+}
+#navbar ul li{
+list-style: none;
+padding: 0px 20px;}
+#navbar ul li a{display: block;
+    
+    color:black;
+padding: 2px 20px;
+font-size: 1.3rem;
+text-decoration: none;
+border-radius: 6px;
+
+font-family: 'Baloo Bhai 2', cursive;}
+#navbar ul li a:hover{display: block;
+    color:rgb(141, 140, 138);
+background-color: rgb(144, 222, 241)}
+/* section-home */
+ #home{display: flex;
+    flex-direction: column;
+    color: #3f3a8d;
+    height: 630px;
+padding: 3px 20px;
+justify-content: center;
+align-items: center;
+
+margin: 0px;
+font-family: 'Baloo Bhai 2', cursive;
+}
+#home::before{content: "";
+background:url(drugs-6312009_1920.jpg) no-repeat center center/cover;
+position: absolute;
+height: 660px;
+width: 100%;
+z-index: -1;
+opacity: 0.3;
+
+} 
+ h2 {font-size: 2.3rem;
+text-align: center;
+margin: 2px;
+padding: 2px;
+font-family: 'Baloo Bhai 2', cursive;
+color: #3f3a8d;}
+ h3 h4 .center{
+    font-size: 1.3rem;
+    text-align: center;
+}
+#home p{font-size: 1.3rem;
+margin: 20px 288px;
+padding: 20px 25px;
+}
+/* .btn{
+    margin: 2px 8px;
+    padding: 4px;
+    font-size: 1rem;
+    border: 2px solid brown;
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+} */
+/* services-section */
+
+
+
+
+
+
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 12px;
+    justify-content: space-evenly;
+    color: #3f3a8d;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#services .box{
+    border: 2px solid brown;
+border-radius: 24px;
+margin: 20px 30px;
+padding: 6px 25px;
+background-color: rgb(247, 241, 241);
+width: 250px;
+
+
+}
+#services .box img{height: 200px;
+    width: 250px;
+    
+display: block;
+margin: auto;}
+
+    
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        width:100%;
+        height: 100%;
+        font-family: 'Baloo Bhai 2', cursive;
+
+        
+    }
+    ul{display: flex;}
+     .logo{display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+        padding: 0px 20px;
+
+
+    }
+    li img {
+        width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    padding: 2px 10px;
+
+    }
+    .chat{
+        
+        position: fixed;
+        width: 100%;
+    
+        top:61%;
+        
+    }
+    .chat img{
+        width: 3%;
+    height: 93%;
+    /* align-items: flex-end; */
+    float:right;
+    
+}
+    
+
+
+
+

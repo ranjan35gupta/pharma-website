@@ -1,0 +1,17 @@
+#navbar{flex-direction: column;
+}
+#navbar::before{
+    height: 132px;
+}
+#navbar ul li{
+    justify-content: space-evenly;
+    height: 67px;
+align-items: center;}
+#navbar ul li a{
+    font-size: 1rem;
+}
+.center{
+    display: initial;
+}
+.chat{width: 100%;}
+.chat img{width: 12%;}

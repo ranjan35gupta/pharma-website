@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" media="screen and (max-width:737px)" href="phone4.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="/"><img src="Bionic Engineers Logo - White.jpg" alt="srimarutipharamcy.com"></a>
+
+        </div>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="/#services-container">Services</a></li>
+            <li class="item"><a href="/index5">About us</a></li>
+            <li class="item"><a href="/index2">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="find">
+        <form action="/search" method="post">        
+            search<input type="search" name="search" id="search1" required>
+            <button type="submit"><img src="magnifying-glass-1976105_1280.png" alt=""></button>
+        </form>
+    </section>
+    <section>
+        <% if(result.length!=0){ %>
+        <table>
+            <tbody>
+                <tr>
+                    <th>S.N</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+                <% let i=0; %>
+                    <% for(let results of result.reverse()){ %>
+                        <tr>
+                            <% i++; %>
+                                <th scope="row">
+                                    <%= i %>
+                                </th>
+                                <td>
+                                    <%= results.name %>
+                                </td>
+                                <td>
+                                    <%= results.email %>
+                                </td>
+                                <td>
+                                    <%= results.mobile %>
+                                </td>
+                                <td>
+                                    <%= results.message %>
+                                </td>
+                                <td>
+                                    <form action="/delete" method="POST" onsubmit="return check()">
+                                        <input type="hidden" name="email" value="<%= results.email %>">
+                                        <button type="submit">DELETE</button>
+                                    </form>
+                                </td>
+                        </tr>
+                        <% } %>
+            </tbody>
+        </table>
+        <% } else { %>
+            <table>
+                    <tr>
+                        <th style="font-size: 2em;">There are no feedbacks yet..!!!</th>
+                    </tr>
+            </table>
+            <% } %>
+    </section>
+    <section class="chat">
+        <a href="http://www.whatsapp.com"><img src="soon-873316_1280.png" alt=""></a>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy;www.srimarutipharmacy.com.All rights are reserved.
+            <ul>
+                <li class="logo"> <img src="facebook-2429746_1280.png" alt="">
+                    <img src="soon-873316_1280.png" alt="">
+                    <img src="twitter-2430933_1280.png" alt="">
+                    <img src="instagram-6338401_1280.png" alt="">
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
