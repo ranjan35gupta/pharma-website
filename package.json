@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node index.js",
-=======
-    "start": "node ./index.js",
->>>>>>> af757dc02947f17a7633565a399afae213bcbb46
     "test": "exit 0"
   },
   "author": "",
