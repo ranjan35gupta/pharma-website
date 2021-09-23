@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js",
+    "start": "node index.js",
     "test": "exit 0"
   },
   "author": "",
@@ -23,7 +23,7 @@
   },
   "publishConfig": {
     "@ranjan35gupta:registry": "https://npm.pkg.github.com"
-  }, 
+  },
   "bugs": {
     "url": "https://github.com/ranjan35gupta/pharma-website/issues"
   },
